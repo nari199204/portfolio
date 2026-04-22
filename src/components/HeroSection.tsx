@@ -21,10 +21,10 @@ const HeroSection = () => {
           Hello, I'm
         </p>
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 animate-fade-up-delay-1">
-          <span className="text-gradient">Alex Morgan</span>
+          <span className="text-gradient">Lakshmi Narayana Nunna </span>
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-up-delay-2">
-          DevOps Engineer — building scalable infrastructure, automating everything, and shipping fast.
+        AWS-focused DevOps Engineer building resilient cloud platforms, automating CI/CD, and accelerating reliable releases.
         </p>
 
         <div className="flex items-center justify-center gap-4 animate-fade-up-delay-3">
@@ -46,8 +46,8 @@ const HeroSection = () => {
         <div className="flex items-center justify-center gap-5 mt-10 animate-fade-up-delay-3">
           {[
             { icon: Github, href: "#", label: "GitHub" },
-            { icon: Linkedin, href: "#", label: "LinkedIn" },
-            { icon: Mail, href: "#contact", label: "Email" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/lakshmi-narayana-nunna", label: "LinkedIn" },
+            { icon: Mail, href: "narayana.cloudengineer@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}

@@ -1,8 +1,9 @@
 const skills = [
-  { category: "Cloud & Infrastructure", items: ["AWS (EC2, S3, ECS, Lambda)", "Google Cloud Platform", "Azure", "Terraform", "Ansible", "CloudFormation"] },
+  { category: "Cloud & Infrastructure", items: ["AWS",  "DigitalOcean", "Terraform", "Ansible", "CloudFormation" , "Cloudflare"] },
   { category: "Containers & Orchestration", items: ["Docker", "Kubernetes", "Helm", "Docker Compose", "ECS/Fargate", "ArgoCD"] },
-  { category: "CI/CD & Automation", items: ["GitHub Actions", "Jenkins", "GitLab CI", "CircleCI", "Bash/Python Scripting", "Make"] },
-  { category: "Monitoring & Observability", items: ["Prometheus", "Grafana", "Datadog", "ELK Stack", "CloudWatch", "PagerDuty"] },
+  { category: "CI/CD & Automation", items: ["Jenkins", "Bash/Python Scripting", "GitHub Actions",] },
+  { category: "Monitoring & Observability", items: ["Prometheus", "Grafana",  "ELK Stack", "CloudWatch" , "Sentry" , "langfuse"] },
+  { category: "Compliance & Governance", items: ["HIPPA" , "SOC 2" ,  "AWS Config", "AWS Security Hub", "AWS Inspector", "AWS Macie", "AWS Audit Manager"] },
 ];
 
 const SkillsSection = () => {

@@ -1,12 +1,12 @@
-import { Mail, MapPin, Send } from "lucide-react";
-import { useState } from "react";
+import { Linkedin, Mail, Phone } from "lucide-react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    window.location.href = `mailto:alex@example.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
+  const contact = {
+   
+    phone: "+91 8790298266",
+    phoneLink: "+918790298266",
+    linkedin: "https://www.linkedin.com/in/lakshmi-narayana-nunna/",
+    email: "narayana.cloudengineer@gmail.com",
   };
 
   return (
@@ -16,55 +16,52 @@ const ContactSection = () => {
           <h2 className="section-heading">
             Get In <span className="text-gradient">Touch</span>
           </h2>
-          <p className="section-subheading">Let's work together</p>
+          <p className="section-subheading">Reach out directly</p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <div className="flex items-center gap-3 text-muted-foreground">
-              <Mail size={18} className="text-primary" />
-              <span className="text-sm">alex@example.com</span>
-            </div>
-            <div className="flex items-center gap-3 text-muted-foreground">
-              <MapPin size={18} className="text-primary" />
-              <span className="text-sm">San Francisco, CA</span>
+        <div className="max-w-5xl mx-auto">
+          <div className="glass-card p-8">
+            <p className="text-muted-foreground text-center mb-8">
+              I am open to DevOps and cloud opportunities. Feel free to connect with me directly.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <a
+                href={`mailto:${contact.email}`}
+                className="border border-border rounded-lg p-4 hover:border-primary/50 transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-2 text-primary">
+                  <Mail size={18} />
+                  <span className="font-semibold">Email</span>
+                </div>
+                <p className="text-sm text-muted-foreground whitespace-nowrap">{contact.email}</p>
+              </a>
+
+              <a
+                href={contact.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="border border-border rounded-lg p-4 hover:border-primary/50 transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-2 text-primary">
+                  <Linkedin size={18} />
+                  <span className="font-semibold">LinkedIn</span>
+                </div>
+                <p className="text-sm text-muted-foreground">linkedin.com/in/lakshmi-narayana-nunna</p>
+              </a>
+
+              <a
+                href={`tel:${contact.phoneLink}`}
+                className="border border-border rounded-lg p-4 hover:border-primary/50 transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-2 text-primary">
+                  <Phone size={18} />
+                  <span className="font-semibold">Phone</span>
+                </div>
+                <p className="text-sm text-muted-foreground">{contact.phone}</p>
+              </a>
             </div>
           </div>
-
-          <form onSubmit={handleSubmit} className="glass-card p-8 space-y-5">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <input
-                type="text"
-                placeholder="Your Name"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
-              />
-            </div>
-            <textarea
-              placeholder="Your Message"
-              required
-              rows={5}
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm resize-none"
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity w-full justify-center"
-            >
-              <Send size={16} /> Send Message
-            </button>
-          </form>
         </div>
       </div>
     </section>

@@ -2,10 +2,10 @@ import { Server, Cloud, GitBranch, Terminal } from "lucide-react";
 
 const AboutSection = () => {
   const highlights = [
-    { icon: Cloud, label: "Cloud Architecture", desc: "AWS, GCP, Azure" },
-    { icon: GitBranch, label: "CI/CD Pipelines", desc: "Jenkins, GitHub Actions" },
-    { icon: Server, label: "Infrastructure as Code", desc: "Terraform, Ansible" },
+    { icon: Cloud, label: "Cloud Architecture", desc: "AWS, DigitalOcean" },
     { icon: Terminal, label: "Containerization", desc: "Docker, Kubernetes" },
+    { icon: Server, label: "Infrastructure as Code", desc: "Terraform, Ansible" },
+    { icon: GitBranch, label: "CI/CD Pipelines", desc: "Jenkins, GitHub Actions" },
   ];
 
   return (
@@ -20,11 +20,10 @@ const AboutSection = () => {
 
         <div className="max-w-3xl mx-auto mb-16">
           <p className="text-muted-foreground text-lg leading-relaxed text-center">
-            I'm a DevOps Engineer with 3 years of experience designing, building, and maintaining
-            cloud infrastructure and CI/CD pipelines. I thrive on automating repetitive tasks,
-            improving deployment workflows, and ensuring systems are reliable and scalable. When
-            I'm not shipping infrastructure code, you'll find me exploring new tools, contributing
-            to open source, or writing about DevOps best practices.
+          DevOps Engineer with 3 years of experience building and operating cloud infrastructure on Amazon Web Services
+          (AWS). Experienced with Kubernetes, Docker, Terraform, CI/CD automation and Linux-based production systems. Working in startup environments managing infrastructure for multiple SaaS platforms including healthcare, voice
+          AI, and e-commerce applications. Focused on improving deployment reliability, automating infrastructure provisioning, and
+          optimizing cloud costs.
           </p>
         </div>
 

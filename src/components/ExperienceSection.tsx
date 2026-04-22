@@ -3,32 +3,30 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     role: "DevOps Engineer",
-    company: "CloudScale Inc.",
-    period: "2023 – Present",
+    company: "Bluebash Pvt Ltd - Mohali, Punjab, India.",
+    period: "September 2023 – Present",
     points: [
-      "Designed and maintained Kubernetes clusters serving 50+ microservices",
-      "Reduced deployment time by 70% through optimized CI/CD pipelines",
-      "Implemented infrastructure as code with Terraform across multi-cloud environments",
+      " Owned end-to-end DevOps lifecycle in a startup environment, including infrastructure design, deployment, monitoring, and cost optimization ",
+      " Managed and scaled Amazon EKS clusters running 10+ microservicesacross healthcare, AI voice, and e-commerce platforms, ensuring 99.9% uptime ",
+      " Built and optimized CI/CD pipelines (Jenkins, GitHub Actions, ArgoCD) reducing deployment time by 40% ",
+      "Automated infrastructure provisioning using Terraform, managing VPC, EKS, RDS, and IAM across multiple environments ",
+      " Reduced AWS infrastructure cost by 20% through EC2 rightsizing, storage optimization, and resource cleanup strategies ",
+      " Implemented monitoring and observability stack (Prometheus, Grafana, Loki, CloudWatch) reducing incident resolution time significantly ",
+      " Deployed and maintained real-time AI voice infrastructure integrating LiveKit, Deepgram, and ElevenLabs for low-latency processing ",
+      " Configured Karpenter for Kubernetes autoscaling, improving resource utilization and reducing compute overhead ",
+
+
+
     ],
   },
   {
-    role: "Junior DevOps Engineer",
-    company: "TechFlow Solutions",
-    period: "2021 – 2023",
+    role: "Cloud Engineer",
+    company: "Blackbuck Technologies Pvt Ltd - Hyderabad, Telangana, India.",
+    period: "June 2023 - August 2023 ",
     points: [
       "Built automated CI/CD pipelines using GitHub Actions and Jenkins",
-      "Managed AWS infrastructure including EC2, RDS, S3, and CloudFront",
-      "Set up monitoring and alerting with Prometheus and Grafana",
-    ],
-  },
-  {
-    role: "DevOps Intern",
-    company: "StartupHub",
-    period: "2021 (6 months)",
-    points: [
-      "Containerized legacy applications using Docker",
-      "Assisted in migrating on-premise workloads to AWS",
-      "Wrote automation scripts in Bash and Python",
+      "Created monitoring dashboards using Grafana improving operational visibility for production services", 
+      "Containerized internal applications using Docker supporting migration toward microservices architecture",
     ],
   },
 ];

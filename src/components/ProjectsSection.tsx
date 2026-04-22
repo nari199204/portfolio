@@ -1,31 +1,30 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "K8s Auto-Scaler",
-    desc: "Custom Kubernetes autoscaler that adjusts pod replicas based on real-time metrics from Prometheus, reducing infrastructure costs by 35%.",
-    tags: ["Kubernetes", "Go", "Prometheus", "Helm"],
-    github: "#",
-    live: "#",
+    title: "Kickcall - AI Voice Assistant",
+    desc: "AI Voice Assistant for healthcare platform, integrating LiveKit, Deepgram, and ElevenLabs for low-latency processing",
+    tags: ["LiveKit", "Deepgram", "SOC 2", "HIPPA",  "AWS", "Kubernetes", "Docker", "Jenkins",  "Terraform"],
+    live: "https://kickcall.ai",
   },
   {
-    title: "CI/CD Pipeline Framework",
-    desc: "Reusable GitHub Actions workflow templates for multi-environment deployments with automated testing, security scanning, and rollback support.",
-    tags: ["GitHub Actions", "Docker", "Terraform", "Python"],
-    github: "#",
+    title: "Rawwine - Wine Retail ",
+    desc: "Wine Retail platform for online wine sales, built with Ruby on Rails and PostgreSQL",
+    tags: ["Grafana", "Prometheus", "ECS", "Docker" ,"Ruby on Rails" , "PostgreSQL"],
+    live: "https://rawwine.com",
   },
   {
-    title: "Infrastructure Dashboard",
-    desc: "Real-time monitoring dashboard combining Grafana, Prometheus, and custom APIs to visualize cloud resource usage and costs.",
-    tags: ["Grafana", "Prometheus", "React", "Node.js"],
-    github: "#",
-    live: "#",
+    title: "Itrust - Healthcare Platform",
+    desc: "Healthcare platform for patient management, built with Ruby on Rails and PostgreSQL",
+    tags: ["Ruby on Rails", "PostgreSQL", "AWS", "Kubernetes", "Docker", "Jenkins", "GitHub Actions", "Terraform"],
+    live: "https://itrust.io",
   },
+
   {
-    title: "Log Aggregation Pipeline",
-    desc: "Centralized logging solution using ELK Stack with custom Logstash filters, processing 10M+ events/day with sub-second search.",
-    tags: ["Elasticsearch", "Logstash", "Kibana", "AWS"],
-    github: "#",
+    title: "Intrya - AI Interview Platform",
+    desc: "AI Interview Platform for job seekers, built with Ruby on Rails and PostgreSQL",
+    tags: ["node.js", "PostgreSQL", "AWS", "Kubernetes", "Docker", "Ingress"],
+    live: "https://intrya.com",
   },
 ];
 
@@ -37,7 +36,7 @@ const ProjectsSection = () => {
           <h2 className="section-heading">
             Featured <span className="text-gradient">Projects</span>
           </h2>
-          <p className="section-subheading">Things I've built & contributed to</p>
+          <p className="section-subheading">Things I've  contributed to</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -59,11 +58,6 @@ const ProjectsSection = () => {
                 ))}
               </div>
               <div className="flex gap-3">
-                {project.github && (
-                  <a href={project.github} className="text-muted-foreground hover:text-primary transition-colors">
-                    <Github size={18} />
-                  </a>
-                )}
                 {project.live && (
                   <a href={project.live} className="text-muted-foreground hover:text-primary transition-colors">
                     <ExternalLink size={18} />
